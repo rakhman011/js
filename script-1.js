@@ -149,3 +149,186 @@ function printMessage (message, mss) {
 }
 
 printMessage("привет", 3)
+
+
+let PeRsone = {
+    NaMe: "antonyo",
+    aGeE: 20,
+    travaille: "developer",
+}
+console.log(PeRsone)
+
+let cAr = {
+    brand: "toyota",
+    model: "camry",
+    year: 2020,
+    color: "blue"
+
+}
+console.log(cAr)
+
+function perrrsone (nMe, laGe, jOb) {
+    this.nMe = nMe;
+    this.laGe = laGe;
+    this.jObe = laGe; 
+}
+
+let peRSSOn10 = new perrrsone ("antone", 28, "front")
+
+let Voiture = {
+    marque: "bmw",
+    lamodel: "m5",
+    date: 2018
+}
+Voiture.marque = "mercedes";
+Voiture["lamodel"] = "GLE";
+Voiture.date = 2020;
+
+console.log(Voiture)
+
+
+let Francee = {}
+
+Francee.ville = "paris"
+Francee.Region = 92;
+
+console.log(Francee)
+
+
+
+let chien = {};
+chien.nOm = "boubou";
+chien.LaGE = 3;
+delete chien.LaGE; 
+
+console.log(chien)
+
+let humain = {
+    lenom: "antoine",
+    monage: 20,
+    greet: function() {
+        console.log("salut mon nom et "+ this.lenom);
+    }
+}
+
+humain.greet();
+
+let calculator = {
+    add: function(uuit, bcd) {
+      return uuit + bcd;
+    },
+    subtract: function(a, bcd) {
+      return uuit - bcd;
+    },
+    multiply: function(a, bcd) {
+      return uuit * bcd;
+    },
+    divide: function(uuit, bcd) {
+      if (bcd === 0) {
+        return "Ошибка: деление на ноль";
+      }
+      return uuit / bcd;
+    }
+  };
+
+
+
+  let unevoiture = {
+        staRt: function() {
+            console.log("Машина запущена");
+        },
+        sTop: function() {
+            console.log("Машина остановлена")
+        }
+  };
+
+unevoiture.staRt();
+unevoiture.sTop();
+
+
+let humai = {
+    lenomM: "",
+    monageE: 0,
+    greett: function() {
+        console.log("salut mon nom et "+ this.lenomM);
+    }
+}
+
+let humai1 = Object.create(humai);
+humai1.lenomM = "marine";
+humai1.monageE = 19;
+humai1.greett();
+
+let humai2 = Object.create(humai);
+humai2.lenomM = "juli";
+humai2.monageE = 29;
+humai2.greett();
+
+
+
+const chiffre = [1,2,3,4,5];
+
+chiffre.pop()
+chiffre.push(5)
+chiffre.shift()
+chiffre.unshift(0)
+
+console.log(chiffre)
+
+const chiffree = [1,2,3,4,5];
+
+const subArray = chiffree.slice(1,4)
+
+console.log(subArray);
+
+const Chiffre = [1,2,3,4,5,];
+Chiffre.splice(1, 1)
+Chiffre.splice(1, 0, 6, 7)
+console.log(Chiffre);
+
+const CHiffre = [1,2,3,4,5];
+const letters = ['a','b','c'];
+const combine = CHiffre.concat(letters);
+
+console.log(combine);
+
+const Numberss = [1,2,3];
+
+const doublesNumber = Numberss.map(function(nuMber){
+    return nuMber * 2;
+})
+
+console.log(doublesNumber);
+
+const chffr = [1,2,3,4,5,6];
+
+const evenNumbers = chffr.filter(function(chffr){
+    return chffr % 2 === 0;
+})
+
+console.log(evenNumbers);
+
+const cHffr = [1,2,3,4,5];
+const sUm = cHffr.reduce(function(accumliator, currentValue){
+    return accumliator + currentValue;
+}, 0)
+
+console.log(sUm);
+
+const frukt = ["banan", "apple", "cherry"];
+
+frukt.sort()
+console.log(frukt);
+
+const chifre = [1,2,3,4,5,6,7,8,9,10];
+chifre.forEach(function(chifre){
+    console.log(chifre)
+})
+
+const stR = ["lili","marin","anjelina","diana"]
+
+const result = stR.find(function(naameE){
+    return naameE === "diana";
+})
+
+console.log(result);
