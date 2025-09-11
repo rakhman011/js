@@ -332,3 +332,13 @@ const result = stR.find(function(naameE){
 })
 
 console.log(result);
+
+const page = document.getElementById('page')
+
+page.addEventListener('dblclick', () => {
+    console.log('deux');
+})
+
+document.addEventListener('keyup', (event) =>{
+    console.log('resultat : ' + event.key);
+})
