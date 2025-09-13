@@ -7,31 +7,34 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
         <style>
             *{box-sizing: border-box;}
-        .vv {
-            width: 500px;
-            height: 300px;
-            background-color: black;
-            margin: auto;
-            padding: 150px;
+             
+            .list-item {
+                margin: 5px 0;
+            }
 
-        }
-        .vv > button {
-            width: 100px;
-            height: 50px;
-            background-color: brown;
-            border-radius: 10px;
-            border: 2px solid greenyellow;
-            margin-left: 50px;
-            text-align: center;
-            cursor: pointer;
-            color: white;
-        }
+            body {
+            transition: background-color 0.5s ease;
+            }
+
+
+
+
+
     </style>
 </head>
 <body>
-    <div class="vv">
-        <button id="page">page2</button>
-    </div>
+   
+    <ul id="list">
+        <button onclick="premier()">bonjour</button>
+        <button onclick="deuxieme()">aurevoir</button>
+        <button onclick="troix()">bonne soiree</button>
+        <button onclick="quatre()">bonsoir</button>
+        <button onclick="cinq()">bonne journee</button>
+    </ul>
+    
+
+
+
       <script src="script-1.js"></script>
 </body>
 </html>
